@@ -1,6 +1,4 @@
-# client-template
-
-Serves as a template for client JavaScript applications.
+# Yahtzee!
 
 It uses:
 * Jade
