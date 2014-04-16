@@ -11,6 +11,24 @@
     $('.arrow').click(arrow);
     $('body').keydown(move);
     $('#add-score').click(addScore);
+    $('#roll').click(roll);
+    $('.die').click(freeze);
+
+  }
+
+  function freeze(){
+    $(this).toggleClass('frozen');
+  }
+
+  function roll(){
+    var $dice = $('.die:not(.frozen)');
+    var count = $dice.length;
+
+    for(var i=0; i < count; i++){
+      var num = Math.floor(Math.random()*6) + 1;
+      $($dice[i]).attr('src', './media/dice-' + num + '.png');
+    }
+
   }
 
   function addScore(){

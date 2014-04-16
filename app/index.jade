@@ -28,12 +28,22 @@ html(lang='en')
             button#add-score.pure-button.pure-button-primary Add Score
 
     .pure-g
-    .pure-u-1
-      img.arrow#up(src='./media/up-arrow.png')
-      img.arrow#down(src='./media/down-arrow.png')
-      img.arrow#left(src='./media/left-arrow.png')
-      img.arrow#right(src='./media/right-arrow.png')
+      .pure-u-1
+        img.arrow#up(src='./media/up-arrow.png')
+        img.arrow#down(src='./media/down-arrow.png')
+        img.arrow#left(src='./media/left-arrow.png')
+        img.arrow#right(src='./media/right-arrow.png')
 
+    .pure-g
+      .pure-u-1-2
+        #dice
+          img.die(src='./media/dice-1.png')
+          img.die(src='./media/dice-2.png')
+          img.die(src='./media/dice-3.png')
+          img.die(src='./media/dice-4.png')
+          img.die(src='./media/dice-5.png')
+      .pure-u-1-2
+        button#roll.pure-button.button-success Roll Dice
     .pure-g
       .pure-u-1
         table#game.pure-table
